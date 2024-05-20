@@ -1,0 +1,92 @@
+.main-container {
+
+    .title-game {
+        font-weight: 900;
+        color: #ffd740;
+        font-size: 35px;
+        padding: 30px 15px 10px 10px;
+    }
+    
+    .second-title {
+        font-weight: 900;
+        color: #993399;
+        font-family: sans-serif;
+    }
+    
+    .normal-text {
+        color: #993399;
+        font-family: sans-serif;
+    }
+    
+    .start-game-button {
+        font-weight: 900;
+        font-family: sans-serif;
+    }
+
+    .main-button {
+        width: 100%;
+    }
+
+    .game-board {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .player-one {
+            background: red;
+            opacity: 0.5;
+        }
+
+        .play-one-p {
+            color: red;
+            font-size: 85px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1 !important;
+            
+        }
+
+        .player-two {
+            background: green;
+            opacity: 0.5;
+        }
+
+        .play-two-p {
+            color: green;
+            font-size: 85px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1 !important;
+        }
+
+        .gamefield{
+            max-width: 310px;
+
+            .row {}
+
+            .subfield {
+                cursor: pointer;
+                margin: 2px;
+                height: 100px;
+                width: 100px;
+                border: 1px solid #686868;
+                border-radius: 5px ;
+
+                &.play-one {
+                    background: red;
+                }
+
+                &.play-two {
+                    background: green;
+                }
+            }
+        }
+    }
+}
+
